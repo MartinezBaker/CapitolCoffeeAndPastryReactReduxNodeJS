@@ -2,7 +2,6 @@ require("dotenv").config();
 const express = require("express");
 const connectDB = require("./config/db");
 const productRouter = require("./routes/productRouter");
-
 const logger = require("morgan");
 
 connectDB();

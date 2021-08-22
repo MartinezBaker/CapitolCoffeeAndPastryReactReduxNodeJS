@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const itemSchema = new Schema(
+const productSchema = new Schema(
   {
     name: {
       type: String,
@@ -15,27 +15,10 @@ const itemSchema = new Schema(
       type: String,
       required: true,
     },
-    menutype: {
+    type: {
       type: String,
       required: true,
     },
-  },
-  {
-    timestamps: true,
-  }
-);
-
-const productSchema = new Schema(
-  {
-    menuname: {
-      type: String,
-      required: true,
-    },
-    menuimage: {
-      type: String,
-      required: true,
-    },
-    items: [itemSchema],
   },
   {
     timestamps: true,
